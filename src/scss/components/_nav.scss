@@ -1,0 +1,48 @@
+.nav-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $gap;
+  width: 100%;
+}
+
+.nav {
+  ul {
+    overflow: auto;
+    list-style-type: none;
+  }
+
+  li {
+    float: left;
+  }
+
+  a {
+    position: relative;
+    display: block;
+    padding: $gap * 0.5 $gap;
+    border-radius: $gap * 0.25;
+    color: $black;
+    letter-spacing: 0.1em;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+      border-bottom: 2px solid $gray-f;
+    }
+
+    &:hover,
+    &:focus,
+    &.active {
+      &::after {
+        display: block;
+      }
+    }
+  }
+}
