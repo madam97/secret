@@ -1,3 +1,10 @@
+.label {
+  margin-bottom: 0.5em;
+  width: 100%;
+  font-size: 0.8em;
+  text-align: left;
+}
+
 .input {
   outline: none;
   margin-bottom: $gap;
@@ -6,4 +13,11 @@
   border: 1px solid $black;
   border-radius: 0.5em;
   font-size: 1rem;
+
+  &.error {
+    border-color: $red;
+  }
 }
+
+.response-ok { margin-bottom: $gap; color: $green; }
+.response-error { margin-bottom: $gap; color: $red; }

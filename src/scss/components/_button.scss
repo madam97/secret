@@ -27,3 +27,12 @@ button {
     background-color: $black;
   }
 }
+
+.tag {
+  display: inline-block;
+  padding: 0.2em 1em;
+  border-radius: 5px;
+  background-color: $black;
+  color: #ffffff;
+  font-size: 1.2em;
+}
