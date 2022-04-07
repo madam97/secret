@@ -6,7 +6,7 @@ export default function Home() {
     <main id="page-home" className="flex-center-col">
       <section className="text-center">
         <h1>Secret server</h1>
-        <p>The website to write and read secrets</p>
+        <p>The website to share secrets</p>
       </section>
 
       <section className="flex-center">
