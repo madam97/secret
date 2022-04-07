@@ -1,0 +1,20 @@
+.block {
+  display: block;
+  margin: $gap * 2;
+  padding: $gap * 2;
+}
+
+.block-outline {
+  @extend .block;
+
+  border: 2px solid $gray-f;
+  border-radius: $gap;
+}
+
+.block-hover {
+  &:hover,
+  &:focus,
+  &.active {
+    background: $gray-f;
+  }
+}
