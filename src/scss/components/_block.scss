@@ -2,13 +2,19 @@
   display: block;
   margin: $gap * 2;
   padding: $gap * 2;
+  border-radius: $gap;
+}
+
+.block-filled {
+  @extend .block;
+
+  background-color: $gray-f;
 }
 
 .block-outline {
   @extend .block;
 
   border: 2px solid $gray-f;
-  border-radius: $gap;
 }
 
 .block-hover {
